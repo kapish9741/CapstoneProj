@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F2F6F5;
+}
+
+header {
+    height: auto;
+    width: auto;
+    margin: 0 5% 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: "Abyssinica SIL", serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: start;
+    padding: 5px;
+    font-size: 32px;
+}
+
+.nav {
+    flex-direction: row;
+    padding: 5px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav ul a {
+    font-family: "BIZ UDPMincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cont1 {
+    padding: 2%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 2% 2% 2%;
+}
+
+.cont1 p {
+    font-family: "BIZ UDPMincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 80px;
+}
+
+.main-img {
+    padding: 1% 5% 5% 5%;
+}
+
+.main-img img {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(70, 70, 70, 0.3);
+}
+
+.cont2{
+    padding: 0 7% 0 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mini-cont{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 30%;
+    margin-bottom: 20px;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.mini-cont img{
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(119, 119, 119, 0.3);
+    margin-bottom: 5px;
+}
+
+.mini-cont h2{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.mini-cont p{
+    color: #00000099;
+    font-size: 18px;
+}
+
+.cont3{
+    padding: 6% 5%;
+}
+.cont3 p{
+    font-family: "BIZ UDPMincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.cont4{
+    margin: 5% 0;
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact{
+    font-size: 40px;
+    font-family: "BIZ UDPMincho", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cont4 p{
+    font-family: "Gothic A1", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.cont5{
+    margin: 5%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cont5 h2{
+    font-family: "BIZ UDPMincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.cont5 p{
+    font-family: "Gothic A1", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.otp {
+    color: #3a3a3a;
+    width: 40px;
+    height: 50px; 
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0 2px;
+
+}
+
+.submit{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #19332D;
+    color: #FAFFFE;
+    padding: 5px 120px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.skip{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #19332D;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+footer{
+    padding: 1% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p{
+    font-size: 24px;
+    font-weight: 400;
+    color: #00000099;
+    font-family: "BIZ UDPMincho", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.follow{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #F2F6F5;
+    padding: 5px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+}
