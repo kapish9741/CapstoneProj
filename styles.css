@@ -22,7 +22,7 @@ header {
     font-style: normal;
     justify-content: start;
     padding: 5px;
-    font-size: 32px;
+    font-size: 42px;
 }
 
 .nav {
@@ -31,6 +31,7 @@ header {
 }
 
 .nav ul {
+    font-weight: 100;
     display: flex;
     list-style: none;
     flex-direction: row;
@@ -44,9 +45,14 @@ header {
     font-style: normal;
     text-decoration: none;
     color: #000000;
-    font-size: 24px;
+    font-size: 28px;
     align-items: center;
     justify-content: space-evenly;
+    transition: color 0.2s ease-in;
+}
+
+.nav ul li:hover a {
+    color: #BF2EF0;
 }
 
 .cont1 {
@@ -58,7 +64,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2% 2% 2% 2%;
+    padding: 9% 4% 2% 4%;
 }
 
 .cont1 p {
@@ -66,9 +72,8 @@ header {
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    font-size: 80px;
+    font-size: 120px;
     font-weight: 400;
-    line-height: 80px;
 }
 
 .main-img {
@@ -107,28 +112,34 @@ header {
     border-radius: 16px;
     box-shadow: 0 4px 10px rgba(119, 119, 119, 0.3);
     margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+.mini-cont img:hover{
+    transform: scale(1.1);
 }
 
 .mini-cont h2{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
 }
 
 .mini-cont p{
     color: #00000099;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .cont3{
-    padding: 6% 5%;
+    padding: 7% 7%;
 }
 .cont3 p{
     font-family: "BIZ UDPMincho", serif;
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 400;
+    line-height: 52px;
 }
 
 .cont4{
@@ -141,7 +152,7 @@ header {
 }
 
 .contact{
-    font-size: 40px;
+    font-size: 48px;
     font-family: "BIZ UDPMincho", serif;
     font-weight: 400;
     font-style: normal;
@@ -157,7 +168,7 @@ header {
 
 .cont5{
     margin: 5%;
-    padding: 5%;
+    padding: 8% 4%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,14 +181,13 @@ header {
     font-weight: 400;
     font-style: normal;
     font-size: 28px;
-    font-weight: 400;
 }
 
 .cont5 p{
     font-family: "Gothic A1", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     margin-bottom: 20px;
 }
@@ -203,15 +213,23 @@ header {
     background-color: #19332D;
     color: #FAFFFE;
     padding: 5px 120px;
-    border: none;
+    border: 2px solid #19332D;
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
     font-weight: 400;
     margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.submit:hover{
+    border: 2px solid #19332D;
+    background-color: #F2F6F5;
+    color: #19332D;
 }
 
 .skip{
+    background-color: #F2F6F5;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -223,14 +241,14 @@ header {
 }
 
 footer{
-    padding: 1% 5%;
+    padding: 5% 2% 2% 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 footer p{
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 400;
     color: #00000099;
     font-family: "BIZ UDPMincho", serif;
@@ -246,5 +264,117 @@ footer p{
     background-color: #F2F6F5;
     padding: 5px 15px;
     border-radius: 6px;
-    font-size: 14px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    border: 2px solid #19332D;
+}
+
+.follow:hover{
+    background-color: #19332D;
+    color: #F2F6F5;
+}
+
+@media (max-width: 1200px) {
+    .logo{
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .nav ul{
+        gap: 10px;
+    }
+
+    .nav ul a{
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .mini-cont {
+        width: 45%;
+    }
+
+    .handlesmall{
+        width: 100%; display: flex; justify-content: center;
+    }
+
+    .cont1 p {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .cont3 p {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .contact {
+        font-size: 30px;
+    }
+
+    .cont5 h2 {
+        font-size: 24px;
+    }
+
+    .cont5 p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo{
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .nav ul{
+        gap: 5px;
+    }
+
+    .nav ul a{
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .mini-cont {
+        width: 100%;
+    }
+
+    .cont1 p {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .cont3 p {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .contact {
+        font-size: 18px;
+    }
+
+    .cont4{
+        justify-content: space-around;
+    }
+
+    .cont4 p{
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .cont5 h2 {
+        font-size: 20px;
+    }
+
+    .cont5 p {
+        font-size: 12px;
+    }
+
+    .submit {
+        padding: 5px 60px;
+    }
+
+    footer p{
+        font-size: 20px;
+    }
 }
