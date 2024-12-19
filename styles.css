@@ -10,10 +10,10 @@ body {
 header {
     height: auto;
     width: auto;
-    margin: 0 5% 0 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0px 48px;
 }
 
 .logo {
@@ -21,13 +21,13 @@ header {
     font-weight: 400;
     font-style: normal;
     justify-content: start;
-    padding: 5px;
+    padding: 16px 0px;
     font-size: 42px;
 }
 
 .nav {
     flex-direction: row;
-    padding: 5px;
+    padding: 16px 0px;
 }
 
 .nav ul {
@@ -36,7 +36,7 @@ header {
     list-style: none;
     flex-direction: row;
     align-items: center;
-    gap: 15px;
+    gap: 32px;
 }
 
 .nav ul a {
@@ -46,6 +46,7 @@ header {
     text-decoration: none;
     color: #000000;
     font-size: 28px;
+    line-height: 32px;
     align-items: center;
     justify-content: space-evenly;
     transition: color 0.2s ease-in;
@@ -55,16 +56,25 @@ header {
     color: #BF2EF0;
 }
 
+main{
+    margin: 48px 0;
+}
+
+.cont2, .cont3, .cont4, .cont5, footer, .main-img{
+    margin: 0px 48px;
+}
+
 .cont1 {
-    padding: 2%;
+    /* gap: 48px; */
 }
 
 .text {
+    margin: 48px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 9% 4% 2% 4%;
+    padding-top: 96px;
 }
 
 .cont1 p {
@@ -77,18 +87,18 @@ header {
 }
 
 .main-img {
-    padding: 1% 5% 5% 5%;
+    padding-bottom: 96px;
 }
 
 .main-img img {
     flex-direction: column;
     width: 100%;
-    border-radius: 16px;
+    border-radius: 22px;
     box-shadow: 0 4px 10px rgba(70, 70, 70, 0.3);
 }
 
 .cont2{
-    padding: 0 7% 0 7%;
+    padding: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -109,7 +119,6 @@ header {
 
 .mini-cont img{
     width: 100%;
-    border-radius: 16px;
     box-shadow: 0 4px 10px rgba(119, 119, 119, 0.3);
     margin-bottom: 5px;
     transition: transform 0.3s ease;
@@ -130,7 +139,7 @@ header {
 }
 
 .cont3{
-    padding: 7% 7%;
+    padding: 96px 0px;
 }
 .cont3 p{
     font-family: "BIZ UDPMincho", serif;
@@ -143,19 +152,19 @@ header {
 }
 
 .cont4{
-    margin: 5% 0;
-    padding: 2% 5%;
+    padding: 96px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.contact{
+.cont4 h2{
     font-size: 48px;
     font-family: "BIZ UDPMincho", serif;
     font-weight: 400;
     font-style: normal;
+    line-height: 52px;
 }
 
 .cont4 p{
@@ -163,46 +172,54 @@ header {
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
-    font-weight: 400;
+    line-height: 32px;
 }
 
 .cont5{
-    margin: 5%;
-    padding: 8% 4%;
+    padding: 200px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 32px;
 }
 
-.cont5 h2{
+.cont5-text h2{
     font-family: "BIZ UDPMincho", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 28px;
+    line-height: 32px;
 }
 
-.cont5 p{
+.cont5-text p{
     font-family: "Gothic A1", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 15px;
     font-weight: 400;
-    margin-bottom: 20px;
+    line-height: 20px;
+    display: flex;
+}
+
+.container-otp{
+    display: flex;
+    gap: 12px;
 }
 
 .otp {
-    color: #3a3a3a;
-    width: 40px;
-    height: 50px; 
+    font-family: "Gothic A1", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0000005C;
     text-align: center;
-    font-size: 14px;
+    width: 56px;
+    height: 64px;
     border: 1px solid #000000;
-    border-radius: 5px;
-    padding: 0;
-    margin: 0 2px;
-
+    border-radius: 8px;
 }
 
 .submit{
@@ -212,13 +229,12 @@ header {
     font-style: normal;
     background-color: #19332D;
     color: #FAFFFE;
-    padding: 5px 120px;
+    width: 400px;
+    padding: 8px 16px 8px 16px;
     border: 2px solid #19332D;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 14px;
-    font-weight: 400;
-    margin-top: 20px;
     transition: all 0.3s ease;
 }
 
@@ -233,15 +249,16 @@ header {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
     font-style: normal;
     color: #19332D;
     border: none;
     cursor: pointer;
-    margin-top: 15px;
 }
 
 footer{
-    padding: 5% 2% 2% 2%;
+    padding: 96px 0 24px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -249,6 +266,7 @@ footer{
 
 footer p{
     font-size: 28px;
+    line-height: 32px;
     font-weight: 400;
     color: #00000099;
     font-family: "BIZ UDPMincho", serif;
@@ -262,7 +280,7 @@ footer p{
     font-weight: 400;
     font-style: normal;
     background-color: #F2F6F5;
-    padding: 5px 15px;
+    padding: 12px 24px;
     border-radius: 6px;
     font-size: 20px;
     transition: all 0.3s ease;
@@ -274,7 +292,7 @@ footer p{
     color: #F2F6F5;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) and (min-width: 768px) {
     .logo{
         font-size: 28px;
         line-height: 28px;
@@ -293,8 +311,9 @@ footer p{
         width: 45%;
     }
 
-    .handlesmall{
-        width: 100%; display: flex; justify-content: center;
+    .mini-cont:last-child{
+        width: 45%;
+        justify-content: center;
     }
 
     .cont1 p {
@@ -307,23 +326,34 @@ footer p{
         line-height: 40px;
     }
 
-    .contact {
+    .cont4 {
         font-size: 30px;
-    }
-
-    .cont5 h2 {
-        font-size: 24px;
-    }
-
-    .cont5 p {
-        font-size: 14px;
     }
 }
 
 @media (max-width: 768px) {
+    header{
+        padding: 0 24px;
+    }
+    .main-img{
+        padding: 0;
+        margin: 0 0 96px 0;
+    }
+
+    .main-img img{
+        width: 100%;
+        border-radius: 0px;
+        border: none;
+    }
+
+    .text{
+        padding: 0;
+    }
+
     .logo{
-        font-size: 18px;
-        line-height: 18px;
+        font-size: 22px;
+        line-height: 22px;
+        padding: 8px 0;
     }
 
     .nav ul{
@@ -344,37 +374,107 @@ footer p{
         line-height: 40px;
     }
 
+    .cont3{
+        padding: 48px 0;
+    }
+
     .cont3 p {
         font-size: 18px;
         line-height: 18px;
     }
 
-    .contact {
-        font-size: 18px;
-    }
-
     .cont4{
         justify-content: space-around;
+        padding: 48px 0;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .cont4 h2{
+        font-size: 24px;
+        line-height: 24px;
     }
 
     .cont4 p{
-        font-size: 14px;
-        line-height: 14px;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    .cont5{
+        gap: 12px;
     }
 
     .cont5 h2 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .cont5 p {
+        font-size: 16px;
+    }
+
+    .container-otp{
+        gap: 4px;
+    }
+
+    .otp{
+        width: 28px;
+        height: 32px;
         font-size: 12px;
+        line-height: 16px;
     }
 
     .submit {
-        padding: 5px 60px;
+        width: 250px;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 12px;
     }
 
     footer p{
         font-size: 20px;
     }
+
+    .follow {
+        font-size: 16px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #19332D;
+        margin: 3px 0;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #F2F6F5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .nav ul a {
+        font-size: 24px;
+    }
 }
+
