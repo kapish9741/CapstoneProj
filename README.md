@@ -1,12 +1,13 @@
 # CapstoneProject
 College Project
 
-
+'''
 fonts used- 
 BIZ UDPMincho
 Abyssinica SIL
 Gothic A1
 Roboto Mono
+'''
 
 RetroFuture
 Welcome to the RetroFuture project! This is a web-based portfolio showcasing a retro-futuristic design aesthetic that blends the charm of the past with the innovations of the future. This README will guide you through the project, its features, and how to set it up.
@@ -38,7 +39,9 @@ bash
 Insert Code
 Run
 Copy code
+'''
 git clone https://github.com/yourusername/RetroFuture.git
+'''
 Navigate to the project directory:
 
 bash
@@ -65,6 +68,11 @@ Fork the project
 Create your feature branch (git checkout -b feature/AmazingFeature)
 Commit your changes (git commit -m 'Add some AmazingFeature')
 Push to the branch (git push origin feature/AmazingFeature)
+'''
+git checkout -b feature
+git commit -m
+git push origin feature
+'''
 Open a pull request
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
